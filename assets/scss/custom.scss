@@ -1,0 +1,23 @@
+// Required
+@import "../../node_modules/bootstrap/scss/functions";
+
+// Default variable overrides
+$body-bg: #2245A5;
+$body-color: #111;
+
+// Required
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+
+$navbar-padding-y: $spacer * 2;
+
+
+
+
+
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap";

@@ -2,9 +2,9 @@
 @import "../../node_modules/bootstrap/scss/functions";
 
 // Default variable overrides
-$body-bg: #2245A5;
+$body-bg: #f5eec6;
 $body-color: #000;
-$primary: #88B3CD;
+$primary: #B1CFDF;
 $secondary: #FFE1E3;
 
 // Required
@@ -15,42 +15,61 @@ $secondary: #FFE1E3;
 @import "../../node_modules/bootstrap/scss/root";
 
 $navbar-dark-active-color: $white;
-$navbar-dark-color: $primary -50;
+$navbar-dark-color: $primary;
 
 
 
 .navbar-collapse {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5rem;
+    font-size: 1rem;
     justify-content: flex-end;
 }
 
-.navbar-dark {
+.navbar-light {
     color: #FFF;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-.bg-dark {
-    background-color: #2245A5 !important;
+.bg-light {
+    background-color: #878787 !important;
 }
 
 .navbar-brand {
-    font-size:3rem !important;
-    padding-left:1.5rem;
+    font-size: 2rem !important;
+    padding-left: 1.5rem;
 }
 
 .nav-item {
     margin-left: 10px !important;
-    margin-right: 20px !important;
-    color:#FFF;
+    margin-right: 10px !important;
+    color: #FFF;
+}
+
+.navbar-toggler {
+    color: #717171 !important;
 }
 
 .active {
-    font-weight:bold !important;
+    font-weight: bold !important;
 }
 
-
-
+ul {
+    list-style:none;
+  }
+  ul li{
+    display:inline-block; 
+    padding:0 7px; 
+    position:relative;
+  }
+  ul li:not(:last-child)::after{
+    content:""; 
+    border:1px solid #e2e2e2;
+    border-width: 1px 1px 0 0;
+    position:absolute; 
+    right: -6px;
+    top:0; 
+    height:100%;
+  }
 
 
 @import "../../node_modules/bootstrap/scss/bootstrap";

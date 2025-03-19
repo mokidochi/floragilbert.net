@@ -3,7 +3,9 @@
 
 // Default variable overrides
 $body-bg: #2245A5;
-$body-color: #111;
+$body-color: #000;
+$primary: #88B3CD;
+$secondary: #FFE1E3;
 
 // Required
 @import "../../node_modules/bootstrap/scss/variables";
@@ -12,9 +14,40 @@ $body-color: #111;
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/root";
 
-$navbar-padding-y: $spacer * 2;
+$navbar-dark-active-color: $primary;
+$navbar-dark-color: $primary -50;
 
 
+
+.navbar-collapse {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    justify-content: flex-end;
+}
+
+.navbar-dark {
+    color: #FFF;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bg-dark {
+    background-color: #2245A5 !important;
+}
+
+.navbar-brand {
+    font-size:3rem !important;
+    padding-left:1.5rem;
+}
+
+.nav-item {
+    margin-left: 10px !important;
+    margin-right: 20px !important;
+    color:#FFF;
+}
+
+.active {
+    font-weight:bold !important;
+}
 
 
 

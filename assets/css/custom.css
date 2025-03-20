@@ -208,7 +208,11 @@
 }
 
 .navbar {
-  box-shadow: 0 0 20px #ffffff;
+  box-shadow: 0 0 20px #000000;
+}
+
+.home .navbar {
+  box-shadow: 0 0 20px #FFF;
 }
 
 header {
@@ -318,6 +322,10 @@ ul li:not(:last-child)::after {
   background: url("../../assets/images/nightsky.jpg");
   background-size: cover;
   background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: block;
 }
 
 .cv {
@@ -328,9 +336,14 @@ ul li:not(:last-child)::after {
 
 h1, .h1 {
   text-align: center !important;
-  vertical-align: middle;
+  background-color: #FFF;
   margin-bottom: 10px !important;
+  vertical-align: middle;
   font-family: "Courier New", Courier, monospace !important;
+}
+
+.home h1, .home .h1 {
+  box-shadow: 0 0 20px #FFF;
 }
 
 /*!

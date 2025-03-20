@@ -309,7 +309,8 @@ ul li:not(:last-child)::after {
   }
 }
 .col {
-  padding: 100px;
+  padding: 10px;
+  padding-bottom: 50px;
 }
 
 /*body backgrounds*/

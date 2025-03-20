@@ -2,7 +2,7 @@
 @import "../../node_modules/bootstrap/scss/functions";
 
 // Default variable overrides
-$body-bg: #f5eec6;
+$body-bg: #e2e2e2;
 $body-color: #000;
 $primary: #B1CFDF;
 $secondary: #FFE1E3;
@@ -31,8 +31,9 @@ $navbar-dark-color: $primary;
 }
 
 .bg-light {
-    background-color: #878787 !important;
+    background-color: #87878700 !important;
 }
+
 
 .navbar-brand {
     font-size: 2rem !important;
@@ -42,34 +43,118 @@ $navbar-dark-color: $primary;
 .nav-item {
     margin-left: 10px !important;
     margin-right: 10px !important;
-    color: #FFF;
+    color: #FFF !important;
 }
 
 .navbar-toggler {
     color: #717171 !important;
+    margin-right: 10px !important;
+}
+
+header {
+    margin-bottom: 100px !important;
 }
 
 .active {
     font-weight: bold !important;
 }
 
+.dropdown-menu {
+    box-shadow: 0 0 10px #737373;
+    background-color: #FFF !important;
+}
+
+
+.dropdown-item:hover {
+    color: #000 !important;
+}
+
+
 ul {
-    list-style:none;
-  }
-  ul li{
-    display:inline-block; 
-    padding:0 7px; 
-    position:relative;
-  }
-  ul li:not(:last-child)::after{
-    content:""; 
-    border:1px solid #e2e2e2;
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    padding: 0 7px;
+    position: relative;
+}
+
+ul li:not(:last-child)::after {
+    content: "";
+    border: 1px solid #e2e2e2;
     border-width: 1px 1px 0 0;
-    position:absolute; 
+    position: absolute;
     right: -6px;
-    top:0; 
-    height:100%;
-  }
+    top: 0;
+    height: 100%;
+}
+
+.container-not-bs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+
+    position: relative;
+    display: inline-block;
+    
+    width: 100%;
+    height: 300px;
+    
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+.box::after {
+    content: "";
+    border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box:hover {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
+.box:hover::after {
+    opacity: 1;
+}
+
+.col {
+    padding: 100px;
+}
+
+body {
+    background: url('../images/bluesky.jpg') !important;
+    background-size:30px;
+}
+
+h1 {
+    text-align: center !important;
+    margin-bottom: 10px !important;
+    font-family: 'Courier New', Courier, monospace !important;
+}
 
 
 @import "../../node_modules/bootstrap/scss/bootstrap";

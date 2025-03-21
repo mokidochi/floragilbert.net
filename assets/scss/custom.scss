@@ -104,26 +104,9 @@ ul li:not(:last-child)::after {
     flex-wrap: wrap;
 }
 
-.box {
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-    margin: 20px;
-    padding: 20px;
-
-    position: relative;
-    display: inline-block;
-
-    width: 100%;
-    height: 300px;
-    margin: 0px !important;
-
-}
-
 @media (pointer: fine) {
     .box {
-        background-color: rgba(236, 236, 236, 1);
+        background-color: rgb(236, 236, 236);
         opacity: 0.9;
         border-radius: 5px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -144,42 +127,70 @@ ul li:not(:last-child)::after {
 
     }
 
-    .col-lg-3,
-    col {
-        .box {
-            height: auto;
-            width: 100%;
-        }
-    }
-
-
-
-    .box::after {
-        content: "";
-        border-radius: 5px;
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        box-shadow: 0 5px 15px rgb(255, 255, 255) inset, 0 5px 15px #000000;
-
-        opacity: 0;
-        -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    }
-
     .box:hover {
-        -webkit-transform: scale(1.05, 1.05);
-        transform: scale(1.05, 1.05);
-        opacity: 1;
-    }
-
-    .box:hover::after {
-        opacity: 1;
+        background-color: #FFF !important;
     }
 }
+
+.row {
+    justify-content:center;
+    flex-direction: row;
+}
+
+.col-lg-3,
+.col-lg-8,
+col {
+    .box {
+        height: auto;
+        width: 100%;
+    }
+}
+
+.box {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+
+    position: relative;
+    display: inline-block;
+
+    width: 100%;
+    height: 300px;
+    margin: 0px !important;
+
+}
+
+.box::after {
+    content: "";
+    border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 15px rgb(255, 255, 255) inset, 0 5px 15px #000000;
+
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box:hover {
+    -webkit-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+    opacity: 1;
+    background-color: #FFF !important;
+}
+
+.box:hover::after {
+    opacity: 1;
+    background-color: #FFF !important;
+}
+
 
 .box ul li {
     margin-bottom: 8px;
@@ -236,25 +247,52 @@ p {
     font-family: 'Courier New', Courier, monospace !important;
 }
 
-h1 {
+h1,
+h2 {
     text-align: center !important;
-    margin-bottom: 10px !important;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-
     text-transform: uppercase;
     font-weight: bold;
-    color: #1e1e1e !important;
-    padding-bottom: 5px !important;
+    color: #1e1e1e ;
+    padding-bottom: 5px;
     margin-bottom: 35px !important;
 }
 
-.display-1 {
-    box-shadow: 0 0 10px #FFF;
+.grostitre {
+    display: flex;
+    align-content:center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.titre_principale {
+    font-size: 54px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    // margin-left: clamp(35px, auto, 50px);
+    // margin-right: clamp(35px, auto, 50px);
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 30px;
+    display: block;
+    width: auto;
+    box-shadow: 0 5 15px hwb(0 0% 100% / 0.300);
+    background-color: #FFF;
+}
+
+.titre_principale::after {
+    border: 1px, solid black;
+    border-width: 100px 100px 100px 100px;
+    position: absolute;
+    bottom: -10px;
+    top: 0;
+    width: 100%;
 }
 
 
-.display-1 {
-    background-color: #FFF;
+h2 {
+    margin-bottom: 20px !important;
+    border-bottom: .5px solid #c2c2c2 !important;
+    padding-bottom: 10px !important;
 }
 
 @import "../../node_modules/bootstrap/scss/bootstrap";

@@ -54,74 +54,69 @@
             </div>
         </nav>
     </header>
-    <div class="grostitre">
-        <h1 class="titre_principale">Curriculum Vitae</h1>
-    </div>
     <div class="container">
         <div class="row justify-content-around align-items-stretch">
             <div class="col col-12 col-lg-3 order-lg-1 order-3">
-                <div class="box lead competences accordion accordion-flush" id="accordionCompetences">
-                    <h2>Compétences</h2>
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                <div class="box lead competences accordion" id="accordionCompetences">
+                    <h2 class="titredeux">Compétences</h2>
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#hardSkills" aria-expanded="true" aria-controls="hardSkills">
-                        <h3 class="titretrois">Hard skills</h3>
+                        <h3 class="quoi">Hard skills</h3>
                     </button>
                     <ol>
-                        <div id="hardSkills" class="accordion-collapse collapse"
-                            data-bs-parent="accordionExperiences">
+                        <div id="hardSkills" class="accordion-collapse collapse" data-bs-parent="accordionExperiences">
                             <div class="accordion-body">
                                 <li>HTML + CSS (Bootstrap)</li>
                                 <div class="progress" role="progressbar" aria-label="Niveau HTML" aria-valuenow="10"
                                     aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated w-25"></div>
+                                    <div class="progress-bar w-25 orange"></div>
                                 </div>
 
                                 <li>Canva</li>
-                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                                <div class="progress" role="progressbar" aria-label="Niveau Canva" aria-valuenow="75"
                                     aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar w-75"></div>
+                                    <div class="progress-bar w-75 canva"></div>
                                 </div>
                             </div>
                     </ol>
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#softSkills" aria-expanded="true" aria-controls="softSkills">
-                        <h3>Soft skills</h3>
+                        <h3 class="quoi">Soft skills</h3>
                     </button>
                     <ol>
-                        <div id="softSkills" class="accordion-collapse collapse"
-                            data-bs-parent="accordionExperiences">
+                        <div id="softSkills" class="accordion-collapse collapse" data-bs-parent="accordionExperiences">
                             <div class="accordion-body">
                                 <li>Optimisme</li>
-                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                                <div class="progress" role="progressbar" aria-label="Optimisme" aria-valuenow="100"
                                     aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar w-75"></div>
+                                    <div class="progress-bar w-100 optimism"></div>
                                 </div>
                                 <li>Esprit d'équipe</li>
-                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
-                                    aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar w-75"></div>
+                                <div class="progress" role="progressbar" aria-label="Esprit d'équipe"
+                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar w-100 teamwork"></div>
                                 </div>
                                 <li>Adaptabilité</li>
-                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                                <div class="progress" role="progressbar" aria-label="Adaptabilité" aria-valuenow="75"
                                     aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar w-75"></div>
+                                    <div class="progress-bar w-75 adaptability"></div>
                                 </div>
                                 <li>Curiosité</li>
-                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                                <div class="progress" role="progressbar" aria-label="Curiosité" aria-valuenow="100"
                                     aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar w-75"></div>
+                                    <div class="progress-bar w-100 curiosity"></div>
                                 </div>
                             </div>
                     </ol>
                 </div>
             </div>
-            <div class="col col-12 col-lg-8 order-lg-2 order-1">
-                <div class="box lead experience accordion accordion-flush" id="accordionExperiences">
-                    <h2>Expériences</h2>
+            <div class="col col-12 col-lg-8 order-lg-2 order-1" style="display:flex;">
+                <div class="box lead experience accordion" id="accordionExperiences">
+                    <h2 class="titredeux">Expériences</h2>
                     <ol>
                         <li>
                             <ul>
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#experienceOne" aria-expanded="true" aria-controls="experienceOne">
                                     <li class="quoi"> Préparatrice drive Leclerc</li>
                                     <li class="quand">De août 2023 à sept. 2023</li>
@@ -141,7 +136,7 @@
                         </li>
                         <li>
                             <ul>
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#experienceTwo" aria-expanded="true" aria-controls="experienceTwo">
                                     <li class="quoi"> Équipière polyvalente McDonald's</li>
                                     <li class="quand">De mai 2021 à juin 2023</li>
@@ -159,7 +154,7 @@
                         </li>
                         <li>
                             <ul>
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#experienceThree" aria-expanded="true"
                                     aria-controls="experienceThree">
                                     <li class="quoi">Rayonniste en pharmacie</li>
@@ -178,7 +173,7 @@
                         </li>
                         <li>
                             <ul>
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#experienceFour" aria-expanded="true"
                                     aria-controls="experienceFour">
                                     <li class="quoi">Travail de récolte dans les champs</li>
@@ -200,24 +195,24 @@
             </div>
             <div class="col col-12 col-lg-3 order-lg-3 order-4">
                 <div class="box lead">
-                    <h2>Langues parlées</h2>
+                    <h2 class="titredeux">Langues parlées</h2>
                     <ol>
                         <li>
-                            <ul>
-                                <li>Français</li>
-                                <li>Maternelle</li>
+                            <ul class="langues">
+                                <li class="quoi">Français</li>
+                                <li class="quand">Maternelle</li>
                             </ul>
-                            <ul>
-                                <li>Anglais</li>
-                                <li>Bilingue</li>
+                            <ul class="langues">
+                                <li class="quoi">Anglais</li>
+                                <li class="quand">Bilingue</li>
                             </ul>
-                            <ul>
-                                <li>Espagnol</li>
-                                <li>Bases</li>
+                            <ul class="langues">
+                                <li class="quoi">Espagnol</li>
+                                <li class="quand">Bases</li>
                             </ul>
-                            <ul>
-                                <li>Japonais</li>
-                                <li>Débutante</li>
+                            <ul class="langues">
+                                <li class="quoi">Japonais</li>
+                                <li class="quand">Débutante</li>
                             </ul>
                         </li>
 
@@ -225,49 +220,70 @@
                 </div>
             </div>
             <div class="col col-12 col-lg-8 order-lg-4 order-2">
-                <div class="box lead formations">
-                    <h2>Formations, diplômes et certifications</h2>
+                <div class="box lead formations accordion" id="accordionFormation">
+                    <h2 class="titredeux">Formations, diplômes et certifications</h2>
                     <ol>
                         <li>
                             <ul>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#tremplin" aria-expanded="true" aria-controls="tremplin">
                                 <li class="quoi">Tremplin numérique</li>
                                 <li class="quand">2024 - 2025</li>
+                                </button>
                             </ul>
                         </li>
                         <li>
                             <ul>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#pix" aria-expanded="true" aria-controls="pix">
                                 <li class="quoi">Certification pix</li>
                                 <li class="quand">2025</li>
+                                </button>
                             </ul>
                         </li>
                         <li>
                             <ul>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#anssi" aria-expanded="true" aria-controls="anssi">
                                 <li class="quoi">MOOC ANSSI</li>
                                 <li class="quand">2025</li>
+                                </button>
                             </ul>
                         </li>
                         <li>
                             <ul>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#apprendre" aria-expanded="true" aria-controls="apprendre">
                                 <li class="quoi">MOOC apprendre à apprendre</li>
                                 <li class="quand">2024</li>
+                                </button>
                             </ul>
                         </li>
                         <li>
                             <ul>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#prepa" aria-expanded="true" aria-controls="prepa">
                                 <li class="quoi">Prépa projet</li>
                                 <li class="quand">2024</li>
+                                </button>
                             </ul>
                         </li>
                         <li>
                             <ul>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#informatique" aria-expanded="true" aria-controls="informatique">
                                 <li class="quoi">L1 informatique à l'UBO</li>
                                 <li class="quand">2015</li>
+                                </button>
                             </ul>
                         </li>
                         <li>
                             <ul>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#formationSeven" aria-expanded="true" aria-controls="formationSeven">
                                 <li class="quoi">Baccalauréat ES</li>
                                 <li class="quand">2015</li>
+                                </button>
                             </ul>
                         </li>
                     </ol>

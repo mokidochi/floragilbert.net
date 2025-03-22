@@ -6,6 +6,17 @@ $body-bg: #e2e2e2;
 $body-color: #000;
 $primary: #B1CFDF;
 $secondary: #FFE1E3;
+$navbar-dark-color: $primary;
+$accordion-button-padding-y: 8px;
+// $accordion-border-width: 0px;
+$accordion-button-active-bg: rgb(255, 255, 255);
+$accordion-button-width: 400px;
+$accordion-border-radius: 20px;
+$accordion-button-bg: rgba(255, 255, 255, 0.274);
+$accordion-icon-width: 15px;
+$accordion-button-focus-box-shadow: none;
+
+
 
 // Required
 @import "../../node_modules/bootstrap/scss/variables";
@@ -14,8 +25,6 @@ $secondary: #FFE1E3;
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/root";
 
-$navbar-dark-active-color: $white;
-$navbar-dark-color: $primary;
 
 
 
@@ -124,8 +133,8 @@ ul li {
         -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
         transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: auto;
+        margin-right: auto;
 
     }
 
@@ -159,7 +168,6 @@ ul li {
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
-    margin: 20px;
     padding: 20px;
 
     position: relative;
@@ -168,6 +176,7 @@ ul li {
     width: 100%;
     height: 300px;
     margin: 0px !important;
+
 
 }
 
@@ -203,6 +212,32 @@ ul li {
 .col {
     padding: 10px;
     padding-bottom: 50px;
+}
+
+/* colours for progress */
+
+.orange {
+    background-color: #F0652A !important;
+}
+
+.canva {
+    background-color: #00C2C8 !important;
+}
+
+.optimism {
+    background-color: #F3DD00 !important;
+}
+
+.teamwork {
+    background-color: #895EF7 !important;
+}
+
+.adaptability {
+    background-color: #D85A5E !important;
+}
+
+.curiosity {
+    background-color: #046C5C !important;
 }
 
 /*body backgrounds*/
@@ -247,6 +282,8 @@ ul li {
     background-attachment: fixed;
 }
 
+
+
 h1,
 h2 {
     text-align: center !important;
@@ -255,13 +292,11 @@ h2 {
     font-weight: bold;
     color: #1e1e1e;
     padding-bottom: 5px;
-    margin-bottom: 35px !important;
 }
 
 h2 {
     text-align: center !important;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-    margin-bottom: 20px !important;
     border-bottom: .5px solid #c2c2c2 !important;
     padding-bottom: 10px !important;
 }
@@ -269,21 +304,6 @@ h2 {
 h3 {
     text-align: center !important;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-    margin: 20px 0 !important;
-}
-
-.titretrois {
-    margin-bottom: 20px;
-    margin-top: 0px !important;
-}
-
-
-
-.grostitre {
-    display: flex;
-    align-content: center;
-    width: 100%;
-    padding: 0 20px;
 }
 
 .titre_principale {
@@ -292,6 +312,7 @@ h3 {
     // margin-left: clamp(35px, auto, 50px);
     // margin-right: clamp(35px, auto, 50px);
     margin: 0 auto;
+    margin-bottom: 30px;
     border-radius: 5px;
     padding: 30px;
     display: block;
@@ -302,13 +323,29 @@ h3 {
     hyphens: auto;
 }
 
+.titredeux {
+    margin-bottom: 12px;
+    padding: 0px;
+}
+
+
+
+
+.grostitre {
+    display: flex;
+    align-content: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+
+
 .competences {
 
     &,
     ol {
         flex-direction: column;
         justify-content: space-between;
-        display: flex;
         flex-wrap: nowrap;
         flex-basis: 100%;
     }
@@ -316,6 +353,12 @@ h3 {
     li {
         display: block;
         align-self: center;
+        margin-bottom: 8px;
+    }
+
+    li:not(:first-child) {
+        margin-top: 12px;
+
     }
 
     h2 {
@@ -323,12 +366,16 @@ h3 {
     }
 }
 
-
+.langues {
+    margin-bottom: 6px;
+}
 
 .quoi {
-    font-weight: bolder;
+    font-weight: bold;
     text-transform: uppercase;
     color: #1f1f1f;
+    font-size: 18px;
+    margin-right:auto;
 }
 
 .quand {
@@ -340,34 +387,30 @@ h3 {
 
 
 
-ol li {
-    font-family: 'Courier New', Courier, monospace !important;
+ol li,
+h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
 ol li ul {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 li ul li {
     display: inline;
 }
 
-li ul li:first-child {
-    content: '';
-    border-bottom: 1px solid #c2c2c2;
-    border-width: thin;
-}
-
-
 
 .accordion-button::after {
     margin-left: 8px !important;
 }
 
-
+.accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+}
 
 
 

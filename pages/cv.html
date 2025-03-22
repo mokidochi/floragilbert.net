@@ -60,41 +60,65 @@
     <div class="container">
         <div class="row justify-content-around align-items-stretch">
             <div class="col col-12 col-lg-3 order-lg-1 order-3">
-                <div class="box lead competences">
+                <div class="box lead competences accordion accordion-flush" id="accordionCompetences">
                     <h2>Compétences</h2>
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#hardSkills" aria-expanded="true" aria-controls="hardSkills">
+                        <h3 class="titretrois">Hard skills</h3>
+                    </button>
                     <ol>
-                        <li>HTML + CSS (Bootstrap)</li>
-                        <div class="progress" role="progressbar" aria-label="Niveau HTML" aria-valuenow="10"
-                            aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated w-25"></div>
-                        </div>
-                        <li>Canva</li>
-                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar w-75"></div>
-                          </div>
-                        <li>Optimisme</li>
-                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar w-75"></div>
-                          </div>
-                        <li>Esprit d'équipe</li>
-                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar w-75"></div>
-                          </div>
-                        <li>Adaptabilité</li>
-                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar w-75"></div>
-                          </div>
-                        <li>Curiosité</li>
-                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar w-75"></div>
-                          </div>
+                        <div id="hardSkills" class="accordion-collapse collapse"
+                            data-bs-parent="accordionExperiences">
+                            <div class="accordion-body">
+                                <li>HTML + CSS (Bootstrap)</li>
+                                <div class="progress" role="progressbar" aria-label="Niveau HTML" aria-valuenow="10"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated w-25"></div>
+                                </div>
+
+                                <li>Canva</li>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar w-75"></div>
+                                </div>
+                            </div>
+                    </ol>
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#softSkills" aria-expanded="true" aria-controls="softSkills">
+                        <h3>Soft skills</h3>
+                    </button>
+                    <ol>
+                        <div id="softSkills" class="accordion-collapse collapse"
+                            data-bs-parent="accordionExperiences">
+                            <div class="accordion-body">
+                                <li>Optimisme</li>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar w-75"></div>
+                                </div>
+                                <li>Esprit d'équipe</li>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar w-75"></div>
+                                </div>
+                                <li>Adaptabilité</li>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar w-75"></div>
+                                </div>
+                                <li>Curiosité</li>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar w-75"></div>
+                                </div>
+                            </div>
                     </ol>
                 </div>
             </div>
             <div class="col col-12 col-lg-8 order-lg-2 order-1">
                 <div class="box lead experience accordion accordion-flush" id="accordionExperiences">
                     <h2>Expériences</h2>
-                    <ol class>
+                    <ol>
                         <li>
                             <ul>
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"

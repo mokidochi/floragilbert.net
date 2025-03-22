@@ -191,10 +191,14 @@
   background-color: rgba(135, 135, 135, 0) !important;
 }
 
+.navbar {
+  box-shadow: 0 0 20px #000000;
+}
+
 .navbar-brand {
   font-size: 2rem !important;
   padding-left: 1.5rem;
-  color: #9b1920 !important;
+  color: #355326 !important;
 }
 
 .nav-item {
@@ -206,10 +210,6 @@
 .navbar-toggler {
   color: #717171 !important;
   margin-right: 10px !important;
-}
-
-.navbar {
-  box-shadow: 0 0 20px #000000;
 }
 
 .home .navbar,
@@ -288,7 +288,7 @@ ul li {
 
 .col-lg-3 .box,
 .col-lg-8 .box,
-col .box {
+.col .box {
   height: auto;
   width: 100%;
 }
@@ -338,10 +338,6 @@ col .box {
   background-color: #FFF !important;
 }
 
-.box ul li {
-  margin-bottom: 8px;
-}
-
 .col {
   padding: 10px;
   padding-bottom: 50px;
@@ -388,10 +384,6 @@ col .box {
   background-attachment: fixed;
 }
 
-ol li {
-  font-family: "Courier New", Courier, monospace !important;
-}
-
 h1, .h1,
 h2,
 .h2 {
@@ -425,8 +417,17 @@ h2,
   hyphens: auto;
 }
 
-.experience p:not(.denier), .formations p:not(.dernier) {
-  margin-bottom: 20px;
+.competences,
+.competences ol {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.competences li {
+  display: block;
+}
+.competences h2, .competences .h2 {
+  flex: 0 0 0;
 }
 
 .quoi {
@@ -439,12 +440,17 @@ h2,
   color: #595959;
   text-transform: uppercase;
   font-size: 1.2rem;
+  margin-left: auto;
 }
 
 h2, .h2 {
   margin-bottom: 20px !important;
   border-bottom: 0.5px solid #c2c2c2 !important;
   padding-bottom: 10px !important;
+}
+
+ol li {
+  font-family: "Courier New", Courier, monospace !important;
 }
 
 ol li ul {
@@ -455,6 +461,16 @@ ol li ul {
 
 li ul li {
   display: inline;
+}
+
+li ul li:first-child {
+  content: "";
+  border-bottom: 1px solid #c2c2c2;
+  border-width: thin;
+}
+
+.accordion-button::after {
+  margin-left: 8px !important;
 }
 
 /*!

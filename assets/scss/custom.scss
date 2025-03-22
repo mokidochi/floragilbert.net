@@ -35,10 +35,14 @@ $navbar-dark-color: $primary;
 }
 
 
+.navbar {
+    box-shadow: 0 0 20px #000000;
+}
+
 .navbar-brand {
     font-size: 2rem !important;
     padding-left: 1.5rem;
-    color: #9b1920 !important;
+    color: #355326 !important;
 }
 
 .nav-item {
@@ -52,9 +56,6 @@ $navbar-dark-color: $primary;
     margin-right: 10px !important;
 }
 
-.navbar {
-    box-shadow: 0 0 20px #000000;
-}
 
 .home .navbar,
 .quisuisje .navbar {
@@ -140,7 +141,7 @@ ul li {
 
 .col-lg-3,
 .col-lg-8,
-col {
+.col {
     .box {
         height: auto;
         width: 100%;
@@ -199,10 +200,6 @@ col {
 }
 
 
-.box ul li {
-    margin-bottom: 8px;
-}
-
 .col {
     padding: 10px;
     padding-bottom: 50px;
@@ -250,10 +247,6 @@ col {
     background-attachment: fixed;
 }
 
-ol li {
-    font-family: 'Courier New', Courier, monospace !important;
-}
-
 h1,
 h2 {
     text-align: center !important;
@@ -285,13 +278,28 @@ h2 {
     box-shadow: 0 5px 15px #000000;
     background-color: #FFF;
     color: #2e2e2e;
-    hyphens:auto;
+    hyphens: auto;
 }
 
 
-.experience p:not(.denier), .formations p:not(.dernier) {
-    margin-bottom: 20px;
+.competences {
+
+    &,
+    ol {
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    li {
+        display: block;
+    }
+
+    h2 {
+        flex: 0 0 0;
+    }
 }
+
+
 
 .quoi {
     font-weight: bolder;
@@ -303,6 +311,7 @@ h2 {
     color: #595959;
     text-transform: uppercase;
     font-size: 1.2rem;
+    margin-left: auto;
 }
 
 h2 {
@@ -311,14 +320,31 @@ h2 {
     padding-bottom: 10px !important;
 }
 
+ol li {
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
 
 ol li ul {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
+
 li ul li {
     display: inline;
+}
+
+li ul li:first-child {
+    content: '';
+    border-bottom: 1px solid #c2c2c2;
+    border-width: thin;
+}
+
+
+
+.accordion-button::after {
+    margin-left: 8px !important;
 }
 
 

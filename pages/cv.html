@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <title>Flora GILBERT</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"
+        defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"
+        defer></script>
 </head>
 
 <body class="cv">
@@ -20,7 +26,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto ">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item ">
                         <a class="nav-link" href="../index.html">Accueil</a>
                     </li>
@@ -52,9 +58,9 @@
         <h1 class="titre_principale">Curriculum Vitae</h1>
     </div>
     <div class="container">
-        <div class="row justify-content-around align-items-center">
+        <div class="row justify-content-around align-items-stretch">
             <div class="col col-12 col-lg-3 order-lg-1 order-3">
-                <div class="box lead">
+                <div class="box lead competences">
                     <h2>Compétences</h2>
                     <ol>
                         <li>HTML + CSS (Bootstrap)</li>
@@ -67,32 +73,85 @@
                 </div>
             </div>
             <div class="col col-12 col-lg-8 order-lg-2 order-1">
-                <div class="box lead experience">
+                <div class="box lead experience accordion accordion-flush" id="accordionExperiences">
                     <h2>Expériences</h2>
-                    <ol>
+                    <ol class>
                         <li>
                             <ul>
-                                <li class="quoi"> Préparatrice drive Leclerc</li>
-                                <li class="quand"> De août 2023 à sept. 2023</li>
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#experienceOne" aria-expanded="true" aria-controls="experienceOne">
+                                    <li class="quoi"> Préparatrice drive Leclerc</li>
+                                    <li class="quand">De août 2023 à sept. 2023</li>
+                                </button>
                             </ul>
+                            <div id="experienceOne" class="accordion-collapse collapse"
+                                data-bs-parent="accordionExperiences">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <ul>
-                                <li class="quoi"> Équipière polyvalente McDonald's</li>
-                                <li class="quand"> De mai 2021 à juin 2023</li>
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#experienceTwo" aria-expanded="true"
+                                    aria-controls="experienceTwo">
+                                    <li class="quoi"> Équipière polyvalente McDonald's</li>
+                                    <li class="quand">De mai 2021 à juin 2023</li>
+                                </button>
                             </ul>
+                            <div id="experienceTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
                         </li>
                         <li>
                             <ul>
-                                <li class="quoi">Rayonniste en pharmacie</li>
-                                <li class="quand"> De février 2021 à mars 2021</li>
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#experienceThree" aria-expanded="true"
+                                    aria-controls="experienceThree">
+                                    <li class="quoi">Rayonniste en pharmacie</li>
+                                    <li class="quand">De février 2021 à mars 2021</li>
+                                </button>
                             </ul>
+                            <div id="experienceThree" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
                         </li>
                         <li>
                             <ul>
-                                <li class="quoi">Travail de récolte dans les champs</li>
-                                <li class="quand"> Juillet 2018 à août 2020</li>
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#experienceFour" aria-expanded="true"
+                                    aria-controls="experienceFour">
+                                    <li class="quoi">Travail de récolte dans les champs</li>
+                                    <li class="quand">Juillet 2018 à août 2020</li>
+                                </button>
                             </ul>
+                            <div id="experienceFour" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
                         </li>
                     </ol>
                 </div>
@@ -101,10 +160,25 @@
                 <div class="box lead">
                     <h2>Langues parlées</h2>
                     <ol>
-                        <li>Français (Maternelle)</li>
-                        <li>Anglais (Bilingue)</li>
-                        <li>Espagnol (Bases)</li>
-                        <li>Japonais (Débutante)</li>
+                        <li>
+                            <ul>
+                                <li>Français</li>
+                                <li>Maternelle</li>
+                            </ul>
+                            <ul>
+                                <li>Anglais</li>
+                                <li>Bilingue</li>
+                            </ul>
+                            <ul>
+                                <li>Espagnol</li>
+                                <li>Bases</li>
+                            </ul>
+                            <ul>
+                                <li>Japonais</li>
+                                <li>Débutante</li>
+                            </ul>
+                        </li>
+
                     </ol>
                 </div>
             </div>
@@ -159,13 +233,6 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
-
 </body>
 
 </html>

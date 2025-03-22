@@ -419,12 +419,15 @@ h2,
 
 .competences,
 .competences ol {
+  flex-direction: column;
   justify-content: space-between;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  flex-basis: 100%;
 }
 .competences li {
   display: block;
+  align-self: center;
 }
 .competences h2, .competences .h2 {
   flex: 0 0 0;

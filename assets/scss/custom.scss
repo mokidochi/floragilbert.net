@@ -286,12 +286,15 @@ h2 {
 
     &,
     ol {
+        flex-direction: column;
         justify-content: space-between;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        flex-basis: 100%;
     }
     li {
         display: block;
+        align-self: center;
     }
 
     h2 {

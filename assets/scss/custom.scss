@@ -220,6 +220,14 @@ ul li {
     background-color: #F0652A !important;
 }
 
+.python {
+    background-color: #4786B9 !important;
+}
+
+.excel {
+    background-color: #207345 !important;
+}
+
 .canva {
     background-color: #00C2C8 !important;
 }
@@ -238,6 +246,10 @@ ul li {
 
 .curiosity {
     background-color: #046C5C !important;
+}
+
+.benevolence {
+    background-color: #694977 !important;
 }
 
 /*body backgrounds*/
@@ -403,6 +415,9 @@ li ul li {
     display: inline;
 }
 
+.progress-bar {
+    transform: rotate(180deg);
+}
 
 .accordion-button::after {
     margin-left: 8px !important;
@@ -411,8 +426,4 @@ li ul li {
 .accordion-button:not(.collapsed) {
     box-shadow: none !important;
 }
-
-
-
-
 @import "../../node_modules/bootstrap/scss/bootstrap";

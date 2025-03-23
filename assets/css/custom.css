@@ -347,6 +347,14 @@ ul li {
   background-color: #F0652A !important;
 }
 
+.python {
+  background-color: #4786B9 !important;
+}
+
+.excel {
+  background-color: #207345 !important;
+}
+
 .canva {
   background-color: #00C2C8 !important;
 }
@@ -365,6 +373,10 @@ ul li {
 
 .curiosity {
   background-color: #046C5C !important;
+}
+
+.benevolence {
+  background-color: #694977 !important;
 }
 
 /*body backgrounds*/
@@ -510,6 +522,10 @@ ol li ul {
 
 li ul li {
   display: inline;
+}
+
+.progress-bar {
+  transform: rotate(180deg);
 }
 
 .accordion-button::after {

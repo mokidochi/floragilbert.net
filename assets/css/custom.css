@@ -203,6 +203,11 @@
   padding-bottom: 0px !important;
 }
 
+.navbar-brand img {
+  max-height: 50px;
+  padding: 0px;
+}
+
 .nav-item {
   margin-left: 10px !important;
   margin-right: 10px !important;
@@ -469,8 +474,9 @@ h3, .h3 {
 
 .texte {
   line-height: 1.4;
-  margin-bottom: 16px;
   margin-top: 0px;
+  text-align: justify;
+  padding-bottom: 0px;
 }
 
 .competences,
@@ -527,17 +533,15 @@ h3, .h3 {
 .quoi {
   font-weight: bold;
   text-transform: uppercase;
-  color: #1f1f1f;
+  color: #1448B8;
   font-size: 1.2rem;
-  margin-right: auto;
   hyphens: auto;
 }
 
 .quand {
   color: #595959;
   text-transform: uppercase;
-  font-size: 1.2rem;
-  margin-left: auto;
+  font-size: 1rem;
   hyphens: auto;
 }
 
@@ -567,6 +571,22 @@ li ul li {
 
 .accordion-button:not(.collapsed) {
   box-shadow: none !important;
+}
+
+.col-lg-8 .accordion-body::after {
+  content: "";
+  display: block;
+  width: 50%;
+  border-bottom: 0.5px solid #c2c2c2;
+  padding-bottom: 20px;
+  justify-self: center;
+  margin: 0 auto;
+  margin-bottom: 0px;
+}
+
+.col-lg-3 .accordion-body::after {
+  content: "";
+  margin-bottom: 12px;
 }
 
 /*!

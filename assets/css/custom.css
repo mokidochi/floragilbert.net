@@ -545,6 +545,21 @@ h3, .h3 {
   hyphens: auto;
 }
 
+.infos {
+  color: #cb0000;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: auto 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.petiteicone {
+  margin: auto 0;
+  color: rgba(0, 0, 0, 0.7960784314);
+  margin-right: 20px;
+}
+
 ol li,
 h3,
 .h3 {

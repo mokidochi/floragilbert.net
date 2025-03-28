@@ -439,6 +439,21 @@ h3 {
     hyphens: auto;
 }
 
+.infos {
+    color: #cb0000;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight:400;
+    margin: auto 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.petiteicone {
+    margin: auto 0;
+    color: #000000cb;
+    margin-right: 20px;
+}
+
 
 
 ol li,
@@ -474,18 +489,18 @@ li ul li {
 // }
 
 .col-lg-8 .accordion-body::after {
-    content:'';
-    display:block;
-    width:50%;
+    content: '';
+    display: block;
+    width: 50%;
     border-bottom: .5px solid #c2c2c2;
-    padding-bottom:20px;
-    justify-self:center;
+    padding-bottom: 20px;
+    justify-self: center;
     margin: 0 auto;
     margin-bottom: 0px;
 }
 
-.col-lg-3 .accordion-body::after{
-    content:'';
+.col-lg-3 .accordion-body::after {
+    content: '';
     margin-bottom: 12px;
 }
 
